@@ -86,7 +86,7 @@ h3 {
 }
 
 header {
-    background-color: #F9B5AC;
+    background-image: url("croppedbeach.png");
     background-size: cover;
     background-position: center top;
     width: 100%;
@@ -101,7 +101,7 @@ header {
 .intro h1 {
     font-size: 6em;
     text-align: center;
-    color: #fff;
+    color: #344152;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-weight: 800;
@@ -111,7 +111,7 @@ header {
 .intro h2 {
     font-size: 2em;
     text-align: center;
-    color: #fff;
+    color: #344152;
     font-weight: 300;
     text-transform: capitalize;
     letter-spacing: 0.06em;
@@ -123,7 +123,7 @@ header {
   width: 30px;
   text-align: center;
   text-decoration: none;
-  margin: 30px 2px;
+  margin: 30px 20px;
   border-radius: 50%;
 }
 .fa:hover {
@@ -145,11 +145,14 @@ header {
   background: #cb2027;
   color: white;
 }
+.fa-file-text-o {
+  background: #800080;
+  color: white;
+}
 .fa-github {
   background: #000000;
   color: white;
 }
-
 
 .wrapper {
     max-width: 960px;
@@ -171,7 +174,7 @@ header {
     color: #616569;
     letter-spacing: .03em;
     margin: 10px auto;
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding: 2% 0;
 }
  
@@ -231,7 +234,7 @@ header {
 }
  
 .contact-content a {
-    color: #E0CCC8;
+    color: #B0E0E6;
     text-decoration: none;
 }
 
