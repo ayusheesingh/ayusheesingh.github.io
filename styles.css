@@ -1,134 +1,150 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-body {
-    line-height: 1;
-}
-ol, ul {
-    list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  /*padding-top: 25px;*/
+  /*margin: 0px;*/
+  /*padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;*/
+  /*border: 1px solid black;*/
 }
 
-body {
-    background-color: #f9f9f9;
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  /*height: 600px; */
 }
- 
-a {
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-    transition: .5s;
-    text-decoration: none;
+
+.first-column {
+    width: 30%;
+    padding: 20px;
+    /*height: 680px;*/
+    height: 100vh;
+    float: left;
+    display: flex;
+    align-items: center;
+    /*background-color: #000000;*/
 }
- 
-em {
-    font-style: oblique;
+
+.second-column {
+    width: 70%;
+    padding: 80px;
+    height: 100vh;
+    float: right;
+    align-items: center;
 }
- 
-strong {
-    font-style: bold;
+
+@media only screen and (max-width: 800px) {
+
+   .first-column {
+        width: 100%;
+        /*padding-bottom: 10px;*/
+        float: none;
+    }
+
+    .second-column {
+        width: 100%;
+        /*padding-bottom: 15px;*/
+        float: none;
+    }
+    
 }
- 
-img {
-    width: 100%;
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
- 
-h1, h2, h3, h4, h5 {
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
+
+h2 {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-size: 4em;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 800;
+  /*line-height: 1.5em;*/
 }
- 
+
 h3 {
-    text-transform: capitalize;
-    font-size: 1.875em;
-    padding: 0 0 1% 0;
-    color: #001833;
-    font-weight: 800;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-size: 2em;
+  text-align: center;
+  color: #2F6690;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 800;
+  padding: 16% 0 4% 0;
+  /*line-height: 1.5em;*/
 }
 
-header {
-    background-image: url("croppedbeach.png");
-    background-size: cover;
-    background-position: center top;
-    width: 100%;
+p {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #616569;
+  /*letter-spacing: .03em;*/
+  margin: 10px auto;
+  font-size: 1.2em;
+  /*padding: 16% 0 0 0;*/
+  text-align: justify;
 }
- 
+
+h4 {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: .02;
+  color: #616569;
+  margin: 0px;
+  font-size: 1.2em;
+}
+
+img {
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+}
+
 .intro {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 5% 0;
+  padding-bottom: 25%;
 }
- 
-.intro h1 {
-    font-size: 6em;
-    text-align: center;
-    color: #344152;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-weight: 800;
-    line-height: 1.5em;
+
+.contact-content {
+  max-width: 960px;
+  margin: 0 auto;
+  /*padding: 5% 0;*/
 }
- 
-.intro h2 {
-    font-size: 2em;
-    text-align: center;
-    color: #344152;
-    font-weight: 300;
-    text-transform: capitalize;
-    letter-spacing: 0.06em;
+
+.links {
+  max-width: 960px;
+  /*margin: 0 auto;*/
+  /*padding: 5% 0;*/
 }
 
 .fa {
-  padding: 20px;
+  padding: 18px;
   font-size: 30px;
-  width: 30px;
+  width: 50px;
   text-align: center;
   text-decoration: none;
   margin: 30px 20px;
   border-radius: 50%;
 }
+
 .fa:hover {
     opacity: 0.7;
 }
+
 .fa-facebook { 
   background: #3B5998;
   color: white;
@@ -153,104 +169,31 @@ header {
   background: #000000;
   color: white;
 }
-
-.wrapper {
-    max-width: 960px;
-    margin: 0 auto;
-    font-family: proxima-nova, sans-serif;
-    -webkit-animation-delay: 4s;
-    animation-delay: 2s;
-}
- 
-.about {
-    padding: 4% 0;
-}
- 
-.about p {
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 1.8;
-    color: #616569;
-    letter-spacing: .03em;
-    margin: 10px auto;
-    font-size: 1.2em;
-    padding: 2% 0;
-}
- 
-.about p a {
-    color: #E1CCC9;
-    border-bottom: 2px solid;
+.fa-envelope {
+  background: #A9A9A9;
+  color: white;
 }
 
-.work {
-    height: 300px;
-    padding: 2% 0;
+a:link {
+  text-decoration: none;
+  font-weight: 400;
 }
- 
-.work h3 {
-    padding: 4% 0;
+
+a:visited {
+  text-decoration: none;
 }
- 
-.text-box {
-    float: left;
-    text-align: left;
-    width: 480px;
-    background-color: #fff;
-    height: 100%;
+
+a:hover {
+  text-decoration: underline;
 }
- 
-.text-box-content {
-    padding: 4% 8%;
-}
- 
-.text-box-content p {
-    line-height: 1.8;
-    color: #616569;
-    letter-spacing: .03em;
-    font-size: 1em;
+
+a:active {
+  text-decoration: underline;
 }
 
 .contact {
     width: 100%;
-    background-color: #40434E;
-    padding: 5% 0;
-    margin-top: 5%;
-    clear: both;
-}
- 
-.contact-content {
-    max-width: 960px;
-    margin: 0 auto;
     text-align: center;
-}
- 
-.contact-content h4 {
-    font-size: 1.875em;
-    padding: 1% 0;
-    color: #fff;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-}
- 
-.contact-content a {
-    color: #B0E0E6;
-    text-decoration: none;
-}
-
-.image-divider {
-    padding: 15% 0;
-    background: /* bottom, image */
-    url(img/workspace.jpg);
-    background-size: cover;
-    background-position: center top;
-}
-
-footer {
- background-color:#40434E;
- color:#fff;
- width:100%;
- clear:both;
- height:50px;
-}
+    font-size: 1em;
+    /*background-color: #C9A690;*/
 }
