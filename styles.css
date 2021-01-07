@@ -66,7 +66,7 @@ h2 {
   font-size: 4em;
   text-align: center;
   color: #FFFFFF;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 0.1em;
   font-weight: 800;
   position: relative;
@@ -79,11 +79,11 @@ h3 {
   font-style: normal;
   font-size: 2em;
   text-align: center;
-  color: #2F6690;
-  text-transform: uppercase;
+  color: #704C5E;
+  text-transform: lowercase;
   letter-spacing: 0.1em;
   font-weight: 800;
-  padding: 14% 0 4% 0;
+  padding: 10% 0 4% 0;
   /*line-height: 1.5em;*/
 }
 
@@ -142,7 +142,7 @@ img {
   width: 50px;
   text-align: center;
   text-decoration: none;
-  margin: 30px 20px;
+  margin: 70px 20px;
   border-radius: 50%;
 }
 
@@ -155,11 +155,11 @@ img {
   color: white;
 }
 .fa-instagram {
-  background: #CD486B;
+  background: #B56576;
   color: white;
 }
 .fa-linkedin {
-  background: #007bb5;
+  background: #355070;
   color: white;
 }
 .fa-pinterest {
@@ -167,11 +167,11 @@ img {
   color: white;
 }
 .fa-file-text-o {
-  background: #800080;
+  background: #735D78;
   color: white;
 }
 .fa-github {
-  background: #000000;
+  background: #2B2D42;
   color: white;
 }
 .fa-envelope {
