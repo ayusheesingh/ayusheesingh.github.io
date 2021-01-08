@@ -70,7 +70,8 @@ h2 {
   letter-spacing: 0.1em;
   font-weight: 800;
   position: relative;
-  padding-top: 5%;
+  padding: 5% 0 1% 0;
+  /* padding-top: 5%; */
   /*line-height: 1.5em;*/
 }
 
@@ -96,8 +97,6 @@ p {
   /*letter-spacing: .03em;*/
   margin: 10px auto;
   font-size: 1.2em;
-  /*padding: 16% 0 0 0;*/
-  text-align: justify;
 }
 
 h4 {
